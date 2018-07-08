@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './NewPost.css';
-import {Redirect} from 'react-router-dom';
+// import {Redirect} from 'react-router-dom';
 class NewPost extends Component {
     state = {
         title: '',
