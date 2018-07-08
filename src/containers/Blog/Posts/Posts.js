@@ -7,6 +7,7 @@ class Posts extends Component{
         posts:[]
     };
     componentDidMount(){
+        console.log(this.props);
         axios.get('/posts').then((response)=>{
             const posts = response.data.slice(0,4);
             const updatedPosts = posts.map(post =>{
@@ -25,6 +26,7 @@ class Posts extends Component{
             console.log(error);
             // this.setState({error:true});
         });
+
     }
     postSelectedHandler = (id) =>{
         this.setState((prevState, props)=>{
