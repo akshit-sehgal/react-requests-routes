@@ -8,7 +8,7 @@ class FullPost extends Component {
     }
     componentDidMount(){
        this.loadData();
-    console.log("component mount");
+    console.log("component mount",this.props);
     }
     componentDidUpdate(){
         this.loadData();
